@@ -1,9 +1,27 @@
-<div id="home-container" class="initial-pos transition-all">
+<ul id="scene" class="scene">
+  <li class="layer one" data-depth="0.3">
+    <%= image_tag "rough.jpg", :id => 'rough' %>
+  </li>
+  <li class="layer two" data-depth="0.2">
+    <div id="containment" class="initial-pos transition">
+        <p>COMING SOON</p>
 
-  <video src=""></video>
+        <p>The digital portfolio of Philly natives, and a glimpse into life as the new generation. Continually
+          striving for a new way of thinking, the HOLD Studio delivers originality in its purest consumable form.</p>
 
-  <div id="overlay-container">
-    <%= render 'overlay' %>
-  </div>
+        <p> Think. Make. HOLD.</p>
+    </div>
+    <div id="social" class="initial-pos transition">
+      <i class="fa fa-envelope-o transition"></i>
+      <i class="fa fa-instagram transition"></i>
+      <i class="fa fa-twitter transition"></i>
+      <i class="fa fa-youtube transition"></i>
+      <i class="fa fa-google-plus transition"></i>
+      <i class="fa fa-facebook transition"></i>
+    </div>
+  </li>
+</ul>
 
+<div id="huge-logo" class="initial-pos transition-slow">
+  <%= image_tag("HOLD.png") %>
 </div>

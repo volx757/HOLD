@@ -1,22 +1,19 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    $('#scene').parallax();
+    $('#huge-logo').removeClass('initial-pos')
+    logoGame()
 
-    var listItemDelay = 50;
+    setTimeout(function () {
+        $('#containment, #social').removeClass('initial-pos')
+    }, 900)
 
-    $('#bottom-left .title').removeClass('initial-pos').addClass('final-pos')
+});
 
-
-    $('#top-right li').each(function(){
-        var that = $(this)
-        setTimeout(function(){
-            that.removeClass('initial-pos').addClass('final-pos')
-            listItemDelay += 100
-        }, listItemDelay, that)
+function logoGame() {
+    $('#huge-logo').on('click', function () {
+        $(this).css('opacity', '+=' + .2)
+        setTimeout(function () {
+            $('#huge-logo').css('opacity', '0')
+        }, 1800)
     })
-
-    $('#home-container').removeClass('initial-pos').addClass('final-pos')
-
-    setTimeout(function(){
-        $('#health').addClass('health-bar-animate')
-    }, 1000)
-
-})
+}

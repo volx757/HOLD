@@ -8,7 +8,7 @@ gem 'unicorn'                   # A nice HTTP Server
 gem 'foreman'                   # Use unicorn locally
 gem 'paperclip'                 # For attaching files 
 gem 'protected_attributes'      # For protecting model from mass assignment attacks with attr_accessible
-
+gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'sass-rails'
 gem 'uglifier'
