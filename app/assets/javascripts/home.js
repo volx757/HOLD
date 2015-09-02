@@ -1,8 +1,9 @@
 $(document).ready(function () {
     $('#scene').parallax()
+    $('#fadecover').addClass('off')
     $('#huge-logo').removeClass('initial-pos')
     logoGame()
-    setTimeout(function () {$('#containment, #social').removeClass('initial-pos')}, 900)
+    setTimeout(function () {$('#containment, #social').removeClass('initial-pos')}, 500)
 })
 
 function logoGame() {

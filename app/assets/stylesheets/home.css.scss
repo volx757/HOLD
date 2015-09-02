@@ -47,12 +47,12 @@ a:hover, a:active, a:focus {
         font-family: 'Jura', sans-serif;
         font-size: 1.1em;
         line-height: 1.4em;
+        &:hover {
+          color: silver;
+        }
         p {
           margin: 0.5em;
           font-weight: 900;
-          &:hover {
-            color: silver;
-          }
         }
 
         &.hidden {
@@ -103,12 +103,26 @@ a:hover, a:active, a:focus {
     opacity: 1;
   }
   img {
-    background: black;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 5px;
+    background: black;
     @media (max-width: 1000px){
       width: 100%;
     }
+  }
+}
+
+#fadecover{
+  position: fixed;
+  width: 100%;
+  height:100%;
+  top: 0;
+  z-index: 10;
+  background: black;
+  &.off{
+    opacity: 0;
+    pointer-events: none;
   }
 }
