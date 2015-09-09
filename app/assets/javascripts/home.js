@@ -4,6 +4,8 @@ $(document).ready(function () {
     $('#huge-logo').removeClass('initial-pos')
     logoGame()
     setTimeout(function () {$('#containment, #social').removeClass('initial-pos')}, 500)
+
+    $('#video').play()
 })
 
 function logoGame() {
