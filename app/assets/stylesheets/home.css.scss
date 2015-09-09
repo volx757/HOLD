@@ -21,8 +21,12 @@ a:hover, a:active, a:focus {
   background: black;
   top: -50px;
   .layer {
-    #rough {
-      width: 100%;
+    &.one{
+      video{
+        width: 105%;
+        left: -4%;
+        position: relative;
+      }
     }
 
     &.two {
@@ -108,6 +112,7 @@ a:hover, a:active, a:focus {
     transform: translateY(-50%);
     border-radius: 5px;
     background: black;
+    opacity: 0.7;
     @media (max-width: 1000px){
       width: 100%;
     }
