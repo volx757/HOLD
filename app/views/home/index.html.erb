@@ -1,8 +1,10 @@
 <ul id="scene" class="scene" title="look, listen, feel, HOLD.">
   <li class="layer one" data-depth="0.3">
-    <video id="video" autoplay loop>
+   <!-- <video id="video" autoplay loop>
       <source src="Targetish.mp4" type="video/mp4"/>
-    </video>
+    </video>-->
+     <img src="/assets/rough.jpg" style="width:100%;">
+
   </li>
   <li class="layer two" data-depth="0.2">
     <div id="containment" class="initial-pos transition">
@@ -11,8 +13,6 @@
       <p>The digital portfolio of Philly natives, and a glimpse into life as experienced by the younger generation.
         Continually
         seeking new ways of thinking, HOLD delivers originality in its purest consumable form.</p>
-
-      <p> Look. Listen. Feel. HOLD.</p>
     </div>
     <div id="social" class="initial-pos transition" title="commune with us">
       <a href="mailto:hold.creative@gmail.com" target="_blank"><i class="fa fa-envelope-o transition"></i></a>
@@ -23,9 +23,13 @@
     </div>
   </li>
 </ul>
+<img id='gif' src="dagif.gif" class="transition">
 
 <div id="huge-logo" class="initial-pos transition-slow">
   <%= image_tag("HOLD.png") %>
 </div>
 
+
 <div id="fadecover" class="transition-slow"></div>
+
+<div id="reloader" class="transition-fast no-point"><p> Look. Listen. Feel. HOLD.</p></div>
